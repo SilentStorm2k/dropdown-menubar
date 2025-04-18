@@ -1,0 +1,51 @@
+:root {
+    --color-1: #2c3e50;
+    --color-2: #3498db;
+    --color-3: #e74c3c;
+}
+
+div {
+    max-width: 5rem;
+    border: 0.3rem solid var(--color-1);
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+div > button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    padding: 0.8rem 0.5rem;
+    background-color: var(--color-2);
+    color: white;
+    border-bottom: 0.3rem solid var(--color-1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+div > button:hover {
+    background-color: var(--color-3);
+}
+
+div > button:first-child {
+    border-top: 0.3rem solid var(--color-1);
+}
+
+div > button:last-child {
+    border-bottom: none;
+}
+
+.hide {
+    display: none;
+}
