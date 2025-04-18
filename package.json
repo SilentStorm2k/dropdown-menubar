@@ -1,8 +1,8 @@
 {
     "name": "dropdown-menubar",
     "version": "1.0.0",
-    "description": "<!-- Copyright notice for this README.md template -->",
-    "main": "index.js",
+    "description": "A Typescript Menubar element that you can add to your projects built using TS",
+    "main": "src/ts/dropdown-menubar.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run format && webpack --config webpack.prod.js",
@@ -12,9 +12,11 @@
         "format": "prettier --write .",
         "check-format": "prettier --check ."
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "typescript"
+    ],
+    "author": "SilentStorm2k (https://github.com/SilentStorm2k)",
+    "license": "MIT",
     "devDependencies": {
         "css-loader": "^7.1.2",
         "html-loader": "^5.1.0",
@@ -23,9 +25,17 @@
         "style-loader": "^4.0.0",
         "ts-loader": "^9.5.1",
         "tsc": "^2.0.4",
-        "typescript": "^5.6.2",
+        "typescript": "^5.8.3",
         "webpack": "^5.95.0",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.1.0"
+    },
+    "homepage": "https://github.com/SilentStorm2k/dropdown-menubar",
+    "bugs": {
+        "url": "https://github.com/SilentStorm2k/dropdown-menubar/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SilentStorm2k/dropdown-menubar.git"
     }
 }
