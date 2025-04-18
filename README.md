@@ -113,6 +113,10 @@ A simple menubar plugin for TS and JS built with TS.
 
 Simple plug and play, install the package and use it according to the usage guide.
 
+```sh
+  npm i dropdown-menubar
+```
+
 ### Prerequisites
 
 You must have node installed, otherwise wth you doing here? Might as well update npm while you're at it.
@@ -121,14 +125,6 @@ You must have node installed, otherwise wth you doing here? Might as well update
     ```sh
     npm install npm@latest -g
     ```
-
-### Installation
-
-1. Install through npm
-`sh
-    npm install dropdown-menubar
-    `
-   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
