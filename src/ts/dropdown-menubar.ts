@@ -7,6 +7,7 @@ interface DropDownMenuBar {
     modifyOption: (idx: number, option: Partial<MenuOption>) => void;
     setMaxWidth: (newMaxWidth: number) => void;
     setMenuTitle: (newTitle: string) => void;
+    render: () => void;
 }
 
 interface MenuOption {
@@ -86,16 +87,19 @@ export function dropDownMenu(
         element.style.maxWidth = `${state.maxWidth}rem`;
         element.addEventListener('mouseover', showMenuItems);
         element.addEventListener('mouseout', hideMenuItems);
-        for (const [id, menuOption] of state.menuOptions.entries())
+        state.menuOptions.forEach((menuOption, id) => {
             renderOption(menuOption);
+        });
     }
 
     function showMenuItems(event: MouseEvent | FocusEvent) {
-        for (const child of element.children) child.classList.remove('hide');
+        for (const child of Array.from(element.children))
+            child.classList.remove('hide');
     }
 
     function hideMenuItems(event: MouseEvent | FocusEvent) {
-        for (const child of element.children) child.classList.add('hide');
+        for (const child of Array.from(element.children))
+            child.classList.add('hide');
     }
 
     function renderOption(menuOption: MenuOption) {
@@ -113,5 +117,6 @@ export function dropDownMenu(
         deleteOption,
         setMaxWidth,
         setMenuTitle,
+        render,
     };
 }
