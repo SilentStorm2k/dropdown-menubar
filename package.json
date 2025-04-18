@@ -1,6 +1,6 @@
 {
     "name": "dropdown-menubar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Typescript Menubar element that you can add to your projects built using TS",
     "main": "src/ts/dropdown-menubar.js",
     "scripts": {
